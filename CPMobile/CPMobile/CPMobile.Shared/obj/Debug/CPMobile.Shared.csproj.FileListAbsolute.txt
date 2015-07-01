@@ -1,0 +1,16 @@
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.pri
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\CPMobile.Shared.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\CPMobile.Shared.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\priconfig.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\priconfig.xml.intermediate
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\layout.resfiles
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\layout.resfiles.intermediate
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\resources.resfiles
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\resources.resfiles.intermediate
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\pri.resfiles
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\pri.resfiles.intermediate
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\qualifiers.txt
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\qualifiers.txt.intermediate
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\MultipleQualifiersPerDimensionFound.txt
