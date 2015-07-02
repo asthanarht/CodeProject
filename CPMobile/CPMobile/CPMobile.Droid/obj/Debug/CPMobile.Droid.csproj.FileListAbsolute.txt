@@ -8,9 +8,12 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Android.Su
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Forms.Core.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\CPMobile.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Forms.Core.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\CPMobile.Droid.csprojResolveAssemblyReference.cache
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\CPMobile.Droid.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\CPMobile.Droid.pdb
@@ -19,6 +22,11 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\icon.
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable-hdpi\icon.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable-xhdpi\icon.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\orange.jpg
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\online.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\settings.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\star.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\tap.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\offline.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\R.cs.flag
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\uploadflags.txt
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\orange.jpg

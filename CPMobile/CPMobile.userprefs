@@ -1,0 +1,25 @@
+﻿<Properties StartupItem="CPMobile\CPMobile.Droid\CPMobile.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.0351872121614ed0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CPMobile\CPMobile\App.cs">
+    <Files>
+      <File FileName="CPMobile\CPMobile\Views\LoginPage.cs" Line="71" Column="1" />
+      <File FileName="CPMobile\CPMobile\App.cs" Line="32" Column="30" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\MainActivity.cs" Line="21" Column="1" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\MenuPage.cs" Line="34" Column="23" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\RootPage.cs" Line="22" Column="1" />
+      <File FileName="CPMobile\CPMobile\Views\MainListPage.cs" Line="1" Column="1" />
+      <File FileName="CPMobile\CPMobile\Views\MasterPage.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\App.cs" line="34" column="11" />
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\LoginPage.cs" line="63" column="1" />
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\LoginPage.cs" line="67" column="1" />
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\App.cs" line="25" column="1" />
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\App.cs" line="27" column="26" />
+      <Breakpoint file="R:\git\CodeProject\CPMobile\CPMobile\CPMobile\App.cs" line="39" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

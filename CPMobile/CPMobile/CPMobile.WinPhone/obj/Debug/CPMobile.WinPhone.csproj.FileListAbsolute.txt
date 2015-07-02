@@ -1,9 +1,3 @@
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.csprojResolveAssemblyReference.cache
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\App.g.cs
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\MainPage.g.cs
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.g.resources
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.Resources.AppResources.resources
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.csproj.GenerateResource.Cache
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\SplashScreenImage.jpg
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Assets\ApplicationIcon.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
@@ -21,10 +15,13 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Microsoft.Phone
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Xamarin.Forms.Core.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Xamarin.Forms.Platform.WP8.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Xamarin.Forms.Xaml.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\System.Windows.Interactivity.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\CPMobile.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Xamarin.Forms.Core.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Xamarin.Forms.Xaml.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ar-SA\Microsoft.Phone.Controls.Toolkit.resources.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\az-Latn-AZ\Microsoft.Phone.Controls.Toolkit.resources.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\be-BY\Microsoft.Phone.Controls.Toolkit.resources.dll
@@ -85,6 +82,12 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ko\System.Windo
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.csprojResolveAssemblyReference.cache
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\App.g.cs
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\MainPage.g.cs
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.g.resources
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.Resources.AppResources.resources
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.csproj.GenerateResource.Cache
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\XapCacheFile.xml

@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using CPMobile.Models;
 
 namespace CPMobile.Views
 {
     public class LoginPage : ContentPage
     {
-        public LoginPage()
+		public LoginPage(ILoginManager ilm)
         {
           //  BackgroundColor = Color.Blue;
             BackgroundImage =  "orange.jpg";
@@ -43,6 +44,7 @@ namespace CPMobile.Views
 
             var button = new Button { Text = "Log In", TextColor = Color.White };
 
+
             layout.Children.Add(button);
             relativelayout.Children.Add(backgroundImage,
                 Constraint.Constant(0),
@@ -55,9 +57,18 @@ namespace CPMobile.Views
                 Constraint.Constant(0),
                 Constraint.RelativeToParent((parent)=>{return parent.Width;}),
                 Constraint.RelativeToParent((parent)=>{return parent.Height;}));
+			button.Clicked += (sender, e) => {
+				if (String.IsNullOrEmpty(username.Text) || String.IsNullOrEmpty(password.Text))
+				{
+					DisplayAlert("Validation Error", "Username and Password are required", "Re-try");
+				} else {
+					// REMEMBER LOGIN STATUS!
+					App.Current.Properties["IsLoggedIn"] = true;
+					ilm.ShowRootPage();
+				}
+			};
 
-
-            Content = new ScrollView { Content = relativelayout };
+            Content =  relativelayout ;
 
            
 

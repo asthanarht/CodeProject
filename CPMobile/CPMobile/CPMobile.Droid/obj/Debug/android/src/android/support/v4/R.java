@@ -12,6 +12,11 @@ public final class R {
     }
     public static final class drawable {
         public static int icon=0x7f020000;
-        public static int orange=0x7f020001;
+        public static int offline=0x7f020001;
+        public static int online=0x7f020002;
+        public static int orange=0x7f020003;
+        public static int settings=0x7f020004;
+        public static int star=0x7f020005;
+        public static int tap=0x7f020006;
     }
 }

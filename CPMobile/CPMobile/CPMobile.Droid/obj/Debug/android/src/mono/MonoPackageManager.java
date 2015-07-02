@@ -135,6 +135,7 @@ class MonoPackageManager_Resources {
 		"System.Xml.ReaderWriter.dll",
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
+		"ImageCircle.Forms.Plugin.Abstractions.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

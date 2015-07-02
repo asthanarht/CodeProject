@@ -54,3 +54,4 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\ImageCircle.Forms.Plugin.Abstractions.dll
