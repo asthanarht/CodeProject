@@ -12,17 +12,17 @@ namespace CPMobile.Style
     {
         public MainListCell()
         {
-            var vetProfileImage = new CircleImage
-            {
-                BorderColor = Color.Green,
-                BorderThickness = 2,
-                HeightRequest = 50,
-                WidthRequest = 50,
-                Aspect = Aspect.AspectFill,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-            };
-            vetProfileImage.SetBinding(Image.SourceProperty, "ImageSource");
+            //var vetProfileImage = new CircleImage
+            //{
+            //    BorderColor = Color.Green,
+            //    BorderThickness = 2,
+            //    HeightRequest = 50,
+            //    WidthRequest = 50,
+            //    Aspect = Aspect.AspectFill,
+            //    HorizontalOptions = LayoutOptions.Center,
+            //    VerticalOptions = LayoutOptions.Center,
+            //};
+            //vetProfileImage.SetBinding(Image.SourceProperty, "ImageSource");
 
             var nameLabel = new Label()
             {
@@ -41,36 +41,7 @@ namespace CPMobile.Style
             distanceLabel.SetBinding(Label.TextProperty, new Binding("Distance", stringFormat: "{0} Miles Away"));
 
             // Online image and label
-            var onlineImage = new Image()
-            {
-                Source = "online.png",
-                HeightRequest = 8,
-                WidthRequest = 8
-            };
-            onlineImage.SetBinding(Image.IsVisibleProperty, "ShouldShowAsOnline");
-            var onLineLabel = new Label()
-            {
-                Text = "Online",
-                TextColor = Color.Green,
-                FontSize = 12,
-            };
-            onLineLabel.SetBinding(Label.IsVisibleProperty, "ShouldShowAsOnline");
-
-            // Offline image and label
-            var offlineImage = new Image()
-            {
-                Source = "offline.png",
-                HeightRequest = 8,
-                WidthRequest = 8
-            };
-            offlineImage.SetBinding(Image.IsVisibleProperty, "ShouldShowAsOffline");
-            var offLineLabel = new Label()
-            {
-                Text = "5 hours ago",
-                TextColor = Color.FromHex("#ddd"),
-                FontSize = 12,
-            };
-            offLineLabel.SetBinding(Label.IsVisibleProperty, "ShouldShowAsOffline");
+           
 
             // Vet rating label and star image
             var starLabel = new Label()
@@ -97,7 +68,7 @@ namespace CPMobile.Style
             var statusLayout = new StackLayout
             {
                 Orientation = StackOrientation.Horizontal,
-                Children = { distanceLabel, onlineImage, onLineLabel, offlineImage, offLineLabel }
+                Children = { distanceLabel }
             };
 
             var vetDetailsLayout = new StackLayout
@@ -121,7 +92,7 @@ namespace CPMobile.Style
                 Padding = new Thickness(10, 5, 10, 5),
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                Children = { vetProfileImage, vetDetailsLayout, tapImage }
+                Children = {  vetDetailsLayout, tapImage }
             };
 
             this.View = cellLayout;

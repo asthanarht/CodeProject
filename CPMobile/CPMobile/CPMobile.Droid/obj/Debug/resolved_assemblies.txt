@@ -1,6 +1,8 @@
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\CPMobile.Droid.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\CPMobile.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\FormsViewGroup.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Refractored.Xam.Settings.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Refractored.Xam.Settings.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Xamarin.Forms.Core.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Xamarin.Forms.Platform.Android.dll
@@ -54,4 +56,4 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.ReaderWriter.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.XDocument.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\System.Xml.XmlSerializer.dll
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\ImageCircle.Forms.Plugin.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Newtonsoft.Json.dll

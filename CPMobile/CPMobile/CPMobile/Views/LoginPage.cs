@@ -10,7 +10,7 @@ namespace CPMobile.Views
 {
     public class LoginPage : ContentPage
     {
-		public LoginPage(ILoginManager ilm)
+		public LoginPage()
         {
           //  BackgroundColor = Color.Blue;
             BackgroundImage =  "orange.jpg";
@@ -64,7 +64,7 @@ namespace CPMobile.Views
 				} else {
 					// REMEMBER LOGIN STATUS!
 					App.Current.Properties["IsLoggedIn"] = true;
-					ilm.ShowRootPage();
+					
 				}
 			};
 

@@ -1,6 +1,7 @@
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\bin\Debug\CPMobile.Shared.pri
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\CPMobile.Shared.csprojResolveAssemblyReference.cache
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\CPMobile.Shared.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\CPMobile.Shared.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Shared\obj\Debug\priconfig.xml

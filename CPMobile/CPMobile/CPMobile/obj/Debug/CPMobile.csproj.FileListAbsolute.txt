@@ -2,6 +2,9 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\CPMobile.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\CPMobile.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\ExifLib.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Newtonsoft.Json.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Refractored.Xam.Settings.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Refractored.Xam.Settings.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\SQLite.Net.Async.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\SQLite.Net.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Core.dll
@@ -11,6 +14,9 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Platform.d
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Xaml.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Newtonsoft.Json.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Refractored.Xam.Settings.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Refractored.Xam.Settings.Abstractions.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Core.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Labs.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Labs.Caching.SQLiteNet.xml
@@ -18,3 +24,4 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Xaml.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.csprojResolveAssemblyReference.cache
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\ArticlePage.xaml.g.cs

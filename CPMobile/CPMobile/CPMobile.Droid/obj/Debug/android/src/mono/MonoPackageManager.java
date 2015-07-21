@@ -82,6 +82,8 @@ class MonoPackageManager_Resources {
 		"CPMobile.Droid.dll",
 		"CPMobile.dll",
 		"FormsViewGroup.dll",
+		"Refractored.Xam.Settings.Abstractions.dll",
+		"Refractored.Xam.Settings.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",
@@ -135,7 +137,7 @@ class MonoPackageManager_Resources {
 		"System.Xml.ReaderWriter.dll",
 		"System.Xml.XDocument.dll",
 		"System.Xml.XmlSerializer.dll",
-		"ImageCircle.Forms.Plugin.Abstractions.dll",
+		"Newtonsoft.Json.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

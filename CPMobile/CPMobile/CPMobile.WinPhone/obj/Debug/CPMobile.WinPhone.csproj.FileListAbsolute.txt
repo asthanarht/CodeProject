@@ -91,3 +91,9 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPho
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\CPMobile.WinPhone.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\obj\Debug\XapCacheFile.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Refractored.Xam.Settings.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Newtonsoft.Json.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Refractored.Xam.Settings.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Refractored.Xam.Settings.Abstractions.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Newtonsoft.Json.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.WinPhone\Bin\Debug\Refractored.Xam.Settings.xml

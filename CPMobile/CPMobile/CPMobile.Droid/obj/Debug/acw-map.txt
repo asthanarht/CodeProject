@@ -2,6 +2,10 @@ CPMobile.Droid.MainActivity, CPMobile.Droid;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.
 CPMobile.Droid.MainActivity, CPMobile.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.MainActivity
 CPMobile.Droid.MainActivity;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.MainActivity
 cpmobile.droid.MainActivity;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.MainActivity
+CPMobile.Droid.Renderers.CarouselLayoutRenderer, CPMobile.Droid;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
+CPMobile.Droid.Renderers.CarouselLayoutRenderer, CPMobile.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
+CPMobile.Droid.Renderers.CarouselLayoutRenderer;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
+cpmobile.droid.renderers.CarouselLayoutRenderer;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor

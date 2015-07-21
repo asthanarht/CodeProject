@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="CPMobile\CPMobile.Droid\CPMobile.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.0351872121614ed0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CPMobile\CPMobile\App.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CPMobile\CPMobile\Views\ArticlePage.xaml">
     <Files>
-      <File FileName="CPMobile\CPMobile\Views\LoginPage.cs" Line="71" Column="1" />
+      <File FileName="CPMobile\CPMobile\Views\LoginPage.cs" Line="1" Column="1" />
       <File FileName="CPMobile\CPMobile\App.cs" Line="32" Column="30" />
-      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\MainActivity.cs" Line="21" Column="1" />
-      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\MenuPage.cs" Line="34" Column="23" />
-      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\RootPage.cs" Line="22" Column="1" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\MenuPage.cs" Line="1" Column="1" />
+      <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\RootPage.cs" Line="1" Column="1" />
       <File FileName="CPMobile\CPMobile\Views\MainListPage.cs" Line="1" Column="1" />
       <File FileName="CPMobile\CPMobile\Views\MasterPage.cs" Line="1" Column="1" />
+      <File FileName="CPMobile\CPMobile\Views\ArticlePage.xaml" Line="25" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -37,7 +37,7 @@ namespace CPMobile
 		public void LogOut ()
 		{
 			Properties ["IsLoggedIn"] = false;
-			new LoginPage (this);
+			//new LoginPage (this);
 		}
 
 		#endregion

@@ -18,7 +18,7 @@ namespace CPMobile.Views
             menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
 
             Master = menuPage;
-            Detail = new NavigationPage(new MasterPage());
+            Detail = new NavigationPage(new MainListPage());
         }
 
         void NavigateTo(MenuItem menu)

@@ -15,8 +15,9 @@ public final class R {
         public static final int offline=0x7f020001;
         public static final int online=0x7f020002;
         public static final int orange=0x7f020003;
-        public static final int settings=0x7f020004;
-        public static final int star=0x7f020005;
-        public static final int tap=0x7f020006;
+        public static final int pin=0x7f020004;
+        public static final int settings=0x7f020005;
+        public static final int star=0x7f020006;
+        public static final int tap=0x7f020007;
     }
 }

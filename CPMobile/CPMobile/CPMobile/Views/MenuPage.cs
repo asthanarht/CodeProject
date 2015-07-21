@@ -70,7 +70,7 @@ namespace CPMobile.Views
         {
             this.Add(new MenuItem()
             {
-                Title = "Contracts",
+                Title = "Home",
                 IconSource = "contacts.png",
                 TargetType = typeof(LoginPage)
             });

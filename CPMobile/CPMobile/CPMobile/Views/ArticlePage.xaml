@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CPMobile.Views.ArticlePage"
+             IsBusy="{Binding IsBusy}">
+             
+  <StackLayout>
+		  <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="10" Padding="10" IsVisible = "{Binding IsBusy}">
+		  <ActivityIndicator HorizontalOptions="Center"
+		                          IsRunning="{Binding IsBusy}"
+		                          IsVisible="{Binding IsBusy}"></ActivityIndicator>
+
+		          <Label HorizontalOptions="Center"
+		             VerticalOptions="Center"
+		             Text="Loading..."></Label>
+
+		  </StackLayout>
+
+		  <ListView x:Name="ArticleList"
+		            ItemsSource="{Binding Articles}"
+		            HasUnevenRows="true">
+
+		            <ListView.ItemTemplate>
+		                  <DataTemplate>
+		                     <ViewCell>
+		                         <StackLayout Spacing="0"
+		                                       Padding="10,0,0,0"
+		                                       HorizontalOptions="FillAndExpand">
+
+                                    <Label Text="{Binding title}" FontFamily="HelveticaNeue-Medium" FontSize="18" TextColor="Black"/>
+
+		                         </StackLayout>
+		                     </ViewCell>
+		                  </DataTemplate>
+		            </ListView.ItemTemplate>
+
+
+		       
+		           
+		  </ListView>
+  </StackLayout>
+</ContentPage>
