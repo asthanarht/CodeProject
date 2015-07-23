@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
+using Xamarin.Forms;
 
 namespace CPMobile.ViewModels
 {
@@ -12,6 +13,12 @@ namespace CPMobile.ViewModels
     {
         public BaseViewModel()
         {
+        }
+
+        protected Page page;
+        public BaseViewModel(Page page)
+        {
+            this.page = page;
         }
 
         private string title = string.Empty;
@@ -82,20 +89,35 @@ namespace CPMobile.ViewModels
 
         protected void SetProperty<T>(
             ref T backingStore, T value,
-            string propertyName,
-            Action onChanged = null)
+            string propertyName = "",
+            Action onChanged = null,
+            Action<T> onChanging = null)
         {
 
 
             if (EqualityComparer<T>.Default.Equals(backingStore, value))
                 return;
+            if (onChanging != null)
+                onChanging(value);
 
+            OnPropertyChanging(propertyName);
             backingStore = value;
 
             if (onChanged != null)
                 onChanged();
 
             OnPropertyChanged(propertyName);
+        }
+        #region INotifyPropertyChanging implementation
+        public event Xamarin.Forms.PropertyChangingEventHandler PropertyChanging;
+        #endregion
+
+        public void OnPropertyChanging(string propertyName)
+        {
+            if (PropertyChanging == null)
+                return;
+
+            PropertyChanging(this, new Xamarin.Forms.PropertyChangingEventArgs(propertyName));
         }
 
         #region INotifyPropertyChanged implementation

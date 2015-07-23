@@ -6,6 +6,14 @@ CPMobile.Droid.Renderers.CarouselLayoutRenderer, CPMobile.Droid;md5adebc00e98435
 CPMobile.Droid.Renderers.CarouselLayoutRenderer, CPMobile.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
 CPMobile.Droid.Renderers.CarouselLayoutRenderer;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
 cpmobile.droid.renderers.CarouselLayoutRenderer;md5adebc00e984353b823c7a88a05a184b3.CarouselLayoutRenderer
+CPMobile.Droid.RootNavigationRenderer, CPMobile.Droid;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.RootNavigationRenderer
+CPMobile.Droid.RootNavigationRenderer, CPMobile.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.RootNavigationRenderer
+CPMobile.Droid.RootNavigationRenderer;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.RootNavigationRenderer
+cpmobile.droid.RootNavigationRenderer;md5de2e0fa6d5fcff0756b1c2ac16a18ad2.RootNavigationRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5013aa2e6d396dcfd5abe98fce039a8da.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.0.11.0, Culture=neutral, PublicKeyToken=null;md5013aa2e6d396dcfd5abe98fce039a8da.ImageCircleRenderer
+ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5013aa2e6d396dcfd5abe98fce039a8da.ImageCircleRenderer
+imagecircle.forms.plugin.droid.ImageCircleRenderer;md5013aa2e6d396dcfd5abe98fce039a8da.ImageCircleRenderer
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager/IOnBackStackChangedListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor
 Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mono.android.support.v4.app.FragmentManager_OnBackStackChangedListenerImplementor

@@ -82,6 +82,8 @@ class MonoPackageManager_Resources {
 		"CPMobile.Droid.dll",
 		"CPMobile.dll",
 		"FormsViewGroup.dll",
+		"ImageCircle.Forms.Plugin.Abstractions.dll",
+		"ImageCircle.Forms.Plugin.Android.dll",
 		"Refractored.Xam.Settings.Abstractions.dll",
 		"Refractored.Xam.Settings.dll",
 		"Xamarin.Android.Support.v4.dll",

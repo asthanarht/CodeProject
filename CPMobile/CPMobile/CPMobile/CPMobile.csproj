@@ -41,26 +41,36 @@
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\CPAuthToken.cs" />
     <Compile Include="Models\ICPFeeds.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CPFeedService.cs" />
-    <Compile Include="Style\CPListCell.cs" />
+    <Compile Include="Style\AppStyle.cs" />
+    <Compile Include="Style\CPListCell.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Style\DynamicTemplateLayout.cs" />
+    <Compile Include="Style\SettingsUserView .cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\ArticlePageViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\ArticleViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ViewModels\ForumViewModel.cs" />
     <Compile Include="Style\PagerIndicatorTabs.cs" />
-    <Compile Include="ViewModels\ArticlePageViewModel.cs" />
-    <Compile Include="ViewModels\ArticleViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ViewModels\SwitcherPageViewModel.cs" />
     <Compile Include="ViewModels\TabbedPageViewModel.cs" />
     <Compile Include="Views\ArticleListPage.cs" />
-    <Compile Include="Views\ArticlePage.xaml.cs">
-      <DependentUpon>ArticlePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\ForumListPage.cs" />
     <Compile Include="Views\HomeView.cs" />
     <Compile Include="Views\RootPage.cs" />
     <Compile Include="Style\MainListCell.cs" />
-    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="Views\LoginPage.cs" />
     <Compile Include="Views\MainListPage.cs" />
     <Compile Include="Views\MasterPage.cs" />
@@ -108,12 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Views\ArticlePage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Image\orange.jpg" />

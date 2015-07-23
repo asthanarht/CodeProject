@@ -63,3 +63,7 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\obj\iPhoneSimulator\Debug\tap@
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\obj\iPhoneSimulator\Debug\tap@3x.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\obj\iPhoneSimulator\Debug\offline.png
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\obj\iPhoneSimulator\Debug\offline@2x.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.iOS.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.iOS\bin\iPhoneSimulator\Debug\ImageCircle.Forms.Plugin.iOS.xml

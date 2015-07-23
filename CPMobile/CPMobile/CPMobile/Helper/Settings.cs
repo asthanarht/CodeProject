@@ -10,12 +10,20 @@ namespace CPMobile.Helper
             get { return CrossSettings.Current; }
         }
 
-        private static string authToken = string.Empty;
+        private static string authGenralToken = string.Empty;
 
         public static string AuthToken
         {
-            get { return AppSettings.GetValueOrDefault<string>(authToken); }
-            set { AppSettings.AddOrUpdateValue<string>(authToken,value);}
+            get { return AppSettings.GetValueOrDefault<string>(authGenralToken); }
+            set { AppSettings.AddOrUpdateValue<string>(authGenralToken,value);}
+        }
+
+        private static string authLoginToken = string.Empty;
+
+        public static string AuthLoginToken
+        {
+            get { return AppSettings.GetValueOrDefault<string>(authLoginToken); }
+            set { AppSettings.AddOrUpdateValue<string>(authLoginToken, value); }
         }
     }
 }

@@ -24,4 +24,3 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile\bin\Debug\Xamarin.Forms.Xaml.xml
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.pdb
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\CPMobile.csprojResolveAssemblyReference.cache
-R:\git\CodeProject\CPMobile\CPMobile\CPMobile\obj\Debug\ArticlePage.xaml.g.cs

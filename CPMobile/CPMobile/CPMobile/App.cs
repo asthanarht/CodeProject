@@ -16,15 +16,17 @@ namespace CPMobile
         public App()
         {
             // The root page of your application
-			Current = this;
+            // The root page of your application
+            Current = this;
 
-			var isLoggedIn = Properties.ContainsKey("IsLoggedIn")?(bool)Properties ["IsLoggedIn"]:false;
+            MainPage = new LoginPage();
+            //var isLoggedIn = Properties.ContainsKey("IsLoggedIn")?(bool)Properties ["IsLoggedIn"]:false;
 
-			// we remember if they're logged in, and only display the login page if they're not
-			if (isLoggedIn)
-				MainPage = new RootPage ();
-			else
-                MainPage = new RootPage();
+            // we remember if they're logged in, and only display the login page if they're not
+            //if (isLoggedIn)
+            //    MainPage = new RootPage ();
+            //else
+            //    MainPage = new RootPage();
         }
 
 		#region ILoginManager implementation

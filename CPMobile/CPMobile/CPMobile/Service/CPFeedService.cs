@@ -114,6 +114,52 @@ namespace CPMobile.Service
         {
             throw new NotImplementedException();
         }
+
+
+        public async Task<bool> GetAccessToken(string username, string password)
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(baseUrl);
+
+                // We want the response to be JSON.
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                // Build up the data to POST.
+                List<KeyValuePair<string, string>> postData = new List<KeyValuePair<string, string>>();
+                postData.Add(new KeyValuePair<string, string>("grant_type", "password"));
+                postData.Add(new KeyValuePair<string, string>("client_id", clientId));
+                postData.Add(new KeyValuePair<string, string>("client_secret", clientSecret));
+                postData.Add(new KeyValuePair<string, string>("username", username));
+                postData.Add(new KeyValuePair<string, string>("password", password));
+                FormUrlEncodedContent content = new FormUrlEncodedContent(postData);
+                // Post to the Server and parse the response.
+                try
+                {
+                    var response = await client.PostAsync("Token", content);
+                    response.EnsureSuccessStatusCode();
+                    string jsonString = response.Content.ReadAsStringAsync().Result;
+
+                    //object responseData = JsonConvert.DeserializeObject(jsonString);
+                    Login responseData = JsonHelper.Deserialize<Login>(jsonString);
+
+                    Settings.AuthLoginToken = responseData.access_token;
+
+
+                    return true;
+                    // return the Access Token.
+                    //return responseData.ToString();
+                }
+                catch (Exception ex)
+                {
+
+                    initialized = false;
+                    return false;
+                }
+                return false;
+
+            }
+        }
     }
 }
 

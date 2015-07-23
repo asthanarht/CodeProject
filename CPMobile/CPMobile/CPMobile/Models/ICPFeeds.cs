@@ -13,5 +13,8 @@ namespace CPMobile.Models
         Task<IEnumerable<Item>> GetArticleAsync(int page);
 
         Task<CPFeed> GetForumAsync();
+
+        Task<bool> GetAccessToken(string username, string password);
     }
+
 }

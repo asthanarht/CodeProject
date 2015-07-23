@@ -19,15 +19,7 @@ namespace CPMobile.Views
 
             Menu = new MenuListView();
 
-            var menuLabel = new ContentView
-            {
-                Padding = new Thickness(10, 36, 0, 5),
-                Content = new Label
-                {
-                    TextColor = Color.FromHex("AAAAAA"),
-                    Text = "MENU",
-                }
-            };
+          
 
 			var logoutButton = new Button { Text = "Logout" };
 			logoutButton.Clicked += (sender, e) => {
@@ -38,7 +30,12 @@ namespace CPMobile.Views
                 Spacing = 0,
                 VerticalOptions = LayoutOptions.FillAndExpand
             };
-            layout.Children.Add(menuLabel);
+            layout.Children.Add(new SettingsUserView());
+            layout.Children.Add(new BoxView()
+            {
+                HeightRequest = 1,
+                BackgroundColor = AppStyle.DarkLabelColor,
+            });
             layout.Children.Add(Menu);
 			layout.Children.Add(logoutButton);
             Content = layout;
@@ -54,12 +51,13 @@ namespace CPMobile.Views
             ItemsSource = data;
             VerticalOptions = LayoutOptions.FillAndExpand;
             BackgroundColor = Color.Transparent;
+            
             //SeparatorVisibility = SeparatorVisibility.None;
 
             var cell = new DataTemplate(typeof(MenuCell));
             cell.SetBinding(MenuCell.TextProperty, "Title");
             cell.SetBinding(MenuCell.ImageSourceProperty, "IconSource");
-
+            
             ItemTemplate = cell;
         }
     }
@@ -72,7 +70,7 @@ namespace CPMobile.Views
             {
                 Title = "Home",
                 IconSource = "contacts.png",
-                TargetType = typeof(LoginPage)
+                TargetType = typeof(RootPage)
             });
 
             this.Add(new MenuItem()
@@ -94,6 +92,7 @@ namespace CPMobile.Views
                 Title = "Opportunities",
                 IconSource = "opportunities.png",
                 TargetType = typeof(LoginPage)
+               
             });
         }
     }
@@ -103,6 +102,7 @@ namespace CPMobile.Views
             : base()
         {
             this.TextColor = Color.FromHex("AAAAAA");
+            
         }
     }
 

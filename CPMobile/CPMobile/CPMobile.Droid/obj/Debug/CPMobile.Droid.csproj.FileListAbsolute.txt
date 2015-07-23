@@ -34,3 +34,11 @@ R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\offli
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\R.cs.flag
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\uploadflags.txt
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\drawable\pin.png
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\values\styles.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\res\values\color.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.pdb
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.xml

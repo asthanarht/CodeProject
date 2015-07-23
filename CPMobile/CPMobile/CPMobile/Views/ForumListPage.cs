@@ -12,7 +12,7 @@ namespace CPMobile.Views
     {
         public ForumListPage()
         {
-            Content = new Label { Text = "Hello ContentView" };
+            Content = new Label { Text = "Hello ContentView", TextColor=Color.Blue };
         }
     }
 }

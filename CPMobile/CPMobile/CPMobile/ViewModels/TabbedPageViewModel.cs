@@ -1,5 +1,4 @@
-﻿using CPMobile.Style;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +10,8 @@ namespace CPMobile.ViewModels
     {
         public TabbedPageViewModel()
         {
+            Title = "CodeProject";
+            Icon = "icon.png";
             Pages = new List<ICarouselViewModel>
             {
                 new ArticlePageViewModel(),

@@ -41,6 +41,28 @@ namespace CPMobile.Droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f030002
+			public const int accent = 2130903042;
+			
+			// aapt resource value: 0x7f030000
+			public const int material_blue_500 = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int material_orange = 2130903041;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -74,6 +96,31 @@ namespace CPMobile.Droid
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f040001
+			public const int MyTheme = 2130968577;
+			
+			// aapt resource value: 0x7f040003
+			public const int MyTheme_ActionBar_TitleTextStyle = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int MyTheme_ActionBarStyle = 2130968578;
+			
+			// aapt resource value: 0x7f040000
+			public const int MyTheme_Base = 2130968576;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

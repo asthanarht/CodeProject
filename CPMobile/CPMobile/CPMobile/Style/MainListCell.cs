@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace CPMobile.Style
+namespace CPMobile  
 {
     public class MainListCell : ViewCell
     {

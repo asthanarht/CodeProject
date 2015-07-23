@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using CPMobile.Style;
 using CustomLayouts.Controls;
 using CustomLayouts.ViewModels;
 using CustomLayouts;
@@ -29,8 +28,8 @@ namespace CPMobile.Views
             _viewModel = new TabbedPageViewModel();
             BindingContext = _viewModel;
            // BindingContext = viewModel;
-            BackgroundColor = Color.Black;
-            Title = _indicatorStyle.ToString();
+            //BackgroundColor = Color.Black;
+            Title = "CodeProject";
 
             relativeLayout = new RelativeLayout
             {

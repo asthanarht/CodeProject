@@ -1,4 +1,4 @@
-﻿using CPMobile.Style;
+﻿using CPMobile;
 using CPMobile.Views;
 using System;
 using Xamarin.Forms;
@@ -13,7 +13,7 @@ namespace CustomLayouts
             {
                 HasUnevenRows = true,
                 ItemTemplate = new DataTemplate(typeof(MainListCell)),
-                ItemsSource = CPMobile.Style.MainListCell.VetData.GetData(),
+                ItemsSource = CPMobile.MainListCell.VetData.GetData(),
                 BackgroundColor = Color.White,
             };
 

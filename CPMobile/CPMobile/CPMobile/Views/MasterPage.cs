@@ -19,8 +19,8 @@ namespace CPMobile.Views
 
            
            
-            Children.Add(new MainListPage() { Title="Article"});
-            Children.Add(new MainListPage() { Title="Second"});
+           // Children.Add(new MainListPage() { Title="Article"});
+           // Children.Add(new MainListPage() { Title="Second"});
 
             
             

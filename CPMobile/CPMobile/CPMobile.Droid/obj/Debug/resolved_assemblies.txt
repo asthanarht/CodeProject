@@ -1,6 +1,8 @@
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\CPMobile.Droid.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\CPMobile.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\FormsViewGroup.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\ImageCircle.Forms.Plugin.Abstractions.dll
+R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\ImageCircle.Forms.Plugin.Android.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Refractored.Xam.Settings.Abstractions.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Refractored.Xam.Settings.dll
 R:\git\CodeProject\CPMobile\CPMobile\CPMobile.Droid\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll

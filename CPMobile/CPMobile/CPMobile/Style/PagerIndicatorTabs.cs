@@ -9,7 +9,7 @@ using Xamarin.Forms;
 using CustomLayouts.ViewModels;
 using CPMobile.ViewModels;
 
-namespace CPMobile.Style
+namespace CPMobile
 {
     public class PagerIndicatorTabs : Grid
     {
@@ -24,8 +24,7 @@ namespace CPMobile.Style
             HorizontalOptions = LayoutOptions.CenterAndExpand;
             VerticalOptions = LayoutOptions.Center;
             DotColor = Color.Black;
-            Device.OnPlatform(iOS: () => BackgroundColor = Color.Gray);
-
+            Device.OnPlatform(iOS: () => BackgroundColor = Color.FromHex("#9B2202"), Android: () => BackgroundColor = Color.FromHex("#9B2202"));
             var assembly = typeof(PagerIndicatorTabs).GetTypeInfo().Assembly;
             foreach (var res in assembly.GetManifestResourceNames())
                 System.Diagnostics.Debug.WriteLine("found resource: " + res);
@@ -54,12 +53,12 @@ namespace CPMobile.Style
                     {
                         
                         tab.Children.Add(new Image { Source = "pin.png", HeightRequest = 20 });
-                        tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11 });
+                        tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11, TextColor = Color.White });
                     },
                     Android: () =>
                     {
                         tab.Children.Add(new Image { Source = "pin.png", HeightRequest = 25 });
-                        tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11 });
+                        tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11, TextColor=Color.White });
                     }
                 );
                 var tgr = new TapGestureRecognizer();
