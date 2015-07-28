@@ -17,7 +17,7 @@ namespace CPMobile
         {
             // The root page of your application
             // The root page of your application
-            Current = this;
+            //Current = this;
 
             MainPage = new LoginPage();
             //var isLoggedIn = Properties.ContainsKey("IsLoggedIn")?(bool)Properties ["IsLoggedIn"]:false;

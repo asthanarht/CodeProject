@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CPMobile.Helper;
 
 namespace CPMobile.Models
 {
@@ -61,7 +62,19 @@ namespace CPMobile.Models
         public string id { get; set; }
         public string title { get; set; }
         public List<Author> authors { get; set; }
-        public string summary { get; set; }
+
+        private string _summary = string.Empty;
+        public string summary
+        {
+            get
+            {
+                return  _summary;
+            }
+            set
+            {
+                _summary = value.ToString().Truncate(150);
+            }
+        }
         public string contentType { get; set; }
         public DocType docType { get; set; }
         public List<Category> categories { get; set; }
@@ -71,6 +84,8 @@ namespace CPMobile.Models
         public string modifiedDate { get; set; }
         public ThreadEditor threadEditor { get; set; }
         public string threadModifiedDate { get; set; }
+
+
         public double rating { get; set; }
         public int votes { get; set; }
         public double popularity { get; set; }

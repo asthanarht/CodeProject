@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\CarouselLayoutRenderer.cs" />
+    <Compile Include="Renderers\MenuAndroidTableViewRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\RootNavigationRenderer.cs" />

@@ -14,7 +14,7 @@ namespace CPMobile
         {
             Content = new StackLayout()
             {
-                Padding = new Thickness(0, 10, 0, 25),
+                Padding = new Thickness(0, 10, 0, 0),
                 Spacing = 15,
                 Orientation = StackOrientation.Vertical,
                 Children = {

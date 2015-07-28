@@ -13,25 +13,25 @@ namespace CPMobile.Views
 
         public RootPage()
         {
-            menuPage = new MenuPage();
+            menuPage = new MenuPage(this);
 
-            menuPage.Menu.ItemSelected += (sender, e) => NavigateTo(e.SelectedItem as MenuItem);
+           
 
             Master = menuPage;
             Detail = new NavigationPage(new MainListPage());
         }
 
-        void NavigateTo(MenuItem menu)
-        {
-            if (menu == null)
-                return;
+        //void NavigateTo(MenuItem menu)
+        //{
+        //    if (menu == null)
+        //        return;
 
-            Page displayPage = (Page)Activator.CreateInstance(menu.TargetType);
+        //    //Page displayPage = (Page)Activator.CreateInstance(menu.TargetType);
 
-            Detail = new NavigationPage(displayPage);
+        //    //Detail = new NavigationPage(displayPage);
 
-            menuPage.Menu.SelectedItem = null;
-            IsPresented = false;
-        }
+        //    //menuPage.Menu.SelectedItem = null;
+        //    IsPresented = false;
+        //}
     }
 }

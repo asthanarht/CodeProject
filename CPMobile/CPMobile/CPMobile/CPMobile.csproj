@@ -38,6 +38,7 @@
     <Compile Include="Controls\CarouselLayout.cs" />
     <Compile Include="Helper\JsonHelper.cs" />
     <Compile Include="Helper\Settings.cs" />
+    <Compile Include="Helper\StringHelper.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\CPAuthToken.cs" />
     <Compile Include="Models\ICPFeeds.cs" />
@@ -49,6 +50,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Style\DynamicTemplateLayout.cs" />
+    <Compile Include="Style\MenuCell.cs" />
     <Compile Include="Style\SettingsUserView .cs">
       <SubType>Code</SubType>
     </Compile>

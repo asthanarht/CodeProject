@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.0351872121614ed0" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CPMobile\CPMobile.Droid\Renderers\RootNavigationRenderer.cs">
     <Files>
-      <File FileName="CPMobile\CPMobile\Views\LoginPage.cs" Line="67" Column="1" />
-      <File FileName="CPMobile\CPMobile\App.cs" Line="30" Column="1" />
+      <File FileName="CPMobile\CPMobile\Views\LoginPage.cs" Line="1" Column="1" />
+      <File FileName="CPMobile\CPMobile\App.cs" Line="1" Column="1" />
       <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\MenuPage.cs" Line="1" Column="1" />
       <File FileName="r:\git\CodeProject\CPMobile\CPMobile\CPMobile\Views\RootPage.cs" Line="1" Column="1" />
       <File FileName="CPMobile\CPMobile\Views\MainListPage.cs" Line="1" Column="1" />

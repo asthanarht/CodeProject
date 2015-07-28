@@ -14,6 +14,7 @@ namespace CPMobile
         public static Color DarkLabelColor = Color.FromHex("#747474");
         public static Color LightLabelColor = Color.FromHex("#D5D5D5");
 
+
         public static int PageTitleFontSize = 18;
         public static int SwitchLabelFontSize = 14;
         public static int SwitchInstructionLabelFontSize = 10;

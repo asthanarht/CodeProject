@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CPMobile;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,20 +8,23 @@ using Xamarin.Forms;
 
 namespace CPMobile.Views
 {
+    public class MenuTableView :TableView
+    {
+
+    }
     public class MenuPage :ContentPage
     {
         public ListView Menu { get; set; }
-
-        public MenuPage()
+        RootPage rootPage;
+        TableView tableView;
+        
+        public MenuPage(RootPage rootPage)
         {
             Icon = "settings.png";
             Title = "menu"; // The Title property must be set.
-            BackgroundColor = Color.FromHex("333333");
 
-            Menu = new MenuListView();
-
-          
-
+            this.rootPage = rootPage;
+        
 			var logoutButton = new Button { Text = "Logout" };
 			logoutButton.Clicked += (sender, e) => {
 				App.Current.LogOut();
@@ -28,90 +32,68 @@ namespace CPMobile.Views
             var layout = new StackLayout
             {
                 Spacing = 0,
-                VerticalOptions = LayoutOptions.FillAndExpand
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                BackgroundColor = Color.FromHex("2C3E50"),
             };
-            layout.Children.Add(new SettingsUserView());
-            layout.Children.Add(new BoxView()
+            var section = new TableSection()
             {
-                HeightRequest = 1,
-                BackgroundColor = AppStyle.DarkLabelColor,
-            });
-            layout.Children.Add(Menu);
+                new MenuCell {Text = "Home",Host= this},
+                new MenuCell {Text = "Favorites",Host= this},
+                new MenuCell {Text = "About",Host= this},
+                new MenuCell {Text = "Contact",Host= this},
+            };
+            var root = new TableRoot() { section };
+
+            tableView = new MenuTableView()
+            {
+                Root = root,
+                Intent = TableIntent.Data,
+                BackgroundColor = Color.FromHex("2C3E50"),
+            };
+
+            
+            layout.Children.Add(new SettingsUserView());
+            //layout.Children.Add(new BoxView()
+            //{
+            //    HeightRequest = 1,
+            //    BackgroundColor = AppStyle.DarkLabelColor,
+            //});
+            layout.Children.Add(tableView);
 			layout.Children.Add(logoutButton);
+            
             Content = layout;
         }
-    }
 
-    public class MenuListView : ListView
-    {
-        public MenuListView()
+        NavigationPage home, favorite, favorites;
+        public void Selected(string item)
         {
-            List<MenuItem> data = new MenuListData();
 
-            ItemsSource = data;
-            VerticalOptions = LayoutOptions.FillAndExpand;
-            BackgroundColor = Color.Transparent;
-            
-            //SeparatorVisibility = SeparatorVisibility.None;
+            switch (item)
+            {
+                case "Home":
+                    if (home == null)
+                        home = new NavigationPage(new RootPage());
+                    //rootPage.Detail = home;
+                    break;
+                case "Favorites":
+                    if (favorites == null)
+                        favorites = new NavigationPage(new RootPage());// { BarBackgroundColor = App.NavTint };
+                    rootPage.Detail = favorites;
+                    break;
+                case "Room Plan":
+                    rootPage.Detail = new NavigationPage(new RootPage());// { BarBackgroundColor = App.NavTint };
+                    break;
+                case "Contact":
+                    rootPage.Detail = new NavigationPage(new RootPage());// { BarBackgroundColor = App.NavTint };
+                    break;
+                case "About":
+                    rootPage.Detail = new NavigationPage(new RootPage());// { BarBackgroundColor = App.NavTint };
+                    break;
+            };
+            rootPage.IsPresented = false;  // close the slide-out
+        }	
 
-            var cell = new DataTemplate(typeof(MenuCell));
-            cell.SetBinding(MenuCell.TextProperty, "Title");
-            cell.SetBinding(MenuCell.ImageSourceProperty, "IconSource");
-            
-            ItemTemplate = cell;
-        }
     }
 
-    public class MenuListData : List<MenuItem>
-    {
-        public MenuListData()
-        {
-            this.Add(new MenuItem()
-            {
-                Title = "Home",
-                IconSource = "contacts.png",
-                TargetType = typeof(RootPage)
-            });
-
-            this.Add(new MenuItem()
-            {
-                Title = "Leads",
-                IconSource = "leads.png",
-                TargetType = typeof(LoginPage)
-            });
-
-            this.Add(new MenuItem()
-            {
-                Title = "Accounts",
-                IconSource = "accounts.png",
-                TargetType = typeof(LoginPage)
-            });
-
-            this.Add(new MenuItem()
-            {
-                Title = "Opportunities",
-                IconSource = "opportunities.png",
-                TargetType = typeof(LoginPage)
-               
-            });
-        }
-    }
-    public class MenuCell : ImageCell
-    {
-        public MenuCell()
-            : base()
-        {
-            this.TextColor = Color.FromHex("AAAAAA");
-            
-        }
-    }
-
-    public class MenuItem
-    {
-        public string Title { get; set; }
-
-        public string IconSource { get; set; }
-
-        public Type TargetType { get; set; }
-    }
+    
 }

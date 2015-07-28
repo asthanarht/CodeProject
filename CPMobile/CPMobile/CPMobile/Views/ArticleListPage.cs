@@ -23,11 +23,13 @@ namespace CPMobile.Views
             activityIndicator.SetBinding(ActivityIndicator.IsRunningProperty, "IsBusy");
             var vetlist = new ListView
             {
-                HasUnevenRows = true,
+                HasUnevenRows = false,
                 ItemTemplate = new DataTemplate(typeof(CPListCell)),
                 ItemsSource = articleViewModel.Articles,
                 BackgroundColor = Color.White,
+                RowHeight=120,
             };
+           
             //vetlist.SetBinding<ArticlePageViewModel>();
              Content = new StackLayout
             {
