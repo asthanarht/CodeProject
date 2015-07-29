@@ -77,7 +77,7 @@ namespace CPMobile.Views
                     break;
                 case "Favorites":
                     if (favorites == null)
-                        favorites = new NavigationPage(new RootPage());// { BarBackgroundColor = App.NavTint };
+                        favorites = new NavigationPage(new Profile()) { BarBackgroundColor = App.BrandColor };
                     rootPage.Detail = favorites;
                     break;
                 case "Room Plan":

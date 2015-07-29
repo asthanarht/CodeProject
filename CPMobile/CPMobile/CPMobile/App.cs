@@ -11,13 +11,15 @@ namespace CPMobile
 {
 	public class App : Application, ILoginManager
 	{
+        // https://gist.github.com/ChaseFlorell/32e1f5c1187d2a7e4835
 		public static App Current;
-        public static Color BrandColor = Color.FromHex("#FAA128");
+        public static Color BrandColor = Color.FromHex("#9B2202");
         public App()
         {
             // The root page of your application
             // The root page of your application
             //Current = this;
+           // MainPage = new Profile();
 
             MainPage = new LoginPage();
             //var isLoggedIn = Properties.ContainsKey("IsLoggedIn")?(bool)Properties ["IsLoggedIn"]:false;

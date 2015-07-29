@@ -49,11 +49,13 @@
     <Compile Include="Style\CPListCell.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Style\DetailsView.cs" />
     <Compile Include="Style\DynamicTemplateLayout.cs" />
     <Compile Include="Style\MenuCell.cs" />
     <Compile Include="Style\SettingsUserView .cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Style\ShowProfileDetailsView.cs" />
     <Compile Include="ViewModels\ArticlePageViewModel.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -71,6 +73,7 @@
     <Compile Include="Views\ArticleListPage.cs" />
     <Compile Include="Views\ForumListPage.cs" />
     <Compile Include="Views\HomeView.cs" />
+    <Compile Include="Views\Profile.cs" />
     <Compile Include="Views\RootPage.cs" />
     <Compile Include="Style\MainListCell.cs" />
     <Compile Include="Views\LoginPage.cs" />
