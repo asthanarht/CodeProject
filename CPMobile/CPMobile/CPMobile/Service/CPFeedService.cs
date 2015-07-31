@@ -336,6 +336,7 @@ namespace CPMobile.Service
 
                     // parse the response and return the data.
                     string jsonString = await response.Content.ReadAsStringAsync();
+
                     CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
                     return responseData;
                 }

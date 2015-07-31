@@ -10,7 +10,7 @@ namespace CPMobile.Models
     public class ForumType
     {
         public UriImageSource ImageSource { get; set; }
-        public string Name { get; set; }
+        public string title { get; set; }
 
         public int ForumId { get; set; }
     }

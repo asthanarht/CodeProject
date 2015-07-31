@@ -30,7 +30,7 @@ namespace CPMobile
                 FontSize = 18,
                 TextColor = Color.Black
             };
-            nameLabel.SetBinding(Label.TextProperty, "Name");
+            nameLabel.SetBinding(Label.TextProperty, "title");
 
             
             // Vet rating label and star image

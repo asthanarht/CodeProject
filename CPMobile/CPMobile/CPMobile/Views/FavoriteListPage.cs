@@ -1,12 +1,24 @@
-﻿using Xamarin.Forms;
+﻿using CPMobile.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection.Emit;
+using System.Text;
 using CPMobile.Helper;
+
+using Xamarin.Forms;
 
 namespace CPMobile.Views
 {
-    public class ForumListPage : ContentView
+    public class FavoriteListPage : ContentPage
     {
-        public ForumListPage()
+        FavoriteListViewModel favViewModel;
+        public FavoriteListPage()
         {
+            Title = "Favorite";
+            NavigationPage.SetHasNavigationBar(this, true);
+            BindingContext=favViewModel = new FavoriteListViewModel();
+            favViewModel.GetFavoriteListCommand.Execute(null);
             var searchBar = new SearchBar
             {
                 Placeholder = "Search Forum ",
@@ -17,7 +29,7 @@ namespace CPMobile.Views
             {
                 HasUnevenRows = false,
                 ItemTemplate = new DataTemplate(typeof(CustomListStyle)),
-                ItemsSource = ForumListData.GetData(),
+                ItemsSource = favViewModel.FavList,
                 BackgroundColor = Color.White,
                 RowHeight = 50,
             };
@@ -31,13 +43,14 @@ namespace CPMobile.Views
                 Children = { searchBar, vetlist }
             };
 
-              vetlist.ItemSelected += (sender, e) =>
-                {
-                     var selectedObject = e.SelectedItem as CPMobile.Models.ForumType;
+            vetlist.ItemSelected += (sender, e) =>
+            {
+                var selectedObject = e.SelectedItem as CPMobile.Models.Item;
 
-                 var forumPage = new ForumDetailListPage(selectedObject.title,selectedObject.ForumId);
-                 Navigation.PushAsync(forumPage);
-                };
+                var favPage = new WebViewPage(selectedObject.title, selectedObject.websiteLink.HttpUrlFix());
+                Navigation.PushAsync(favPage);
+            };
         }
     }
+    
 }

@@ -15,87 +15,87 @@ namespace CPMobile.Helper
             return new List<ForumType> {
 				new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = ".Net Framework",
+					title = ".Net Framework",
 					ForumId=1650
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "C/C++/MFC",
+					title = "C/C++/MFC",
 					ForumId=1647
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "C#",
+					title = "C#",
 					ForumId=1649
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Java",
+					title = "Java",
 					ForumId=1643
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "LINQ",
+					title = "LINQ",
 					ForumId=1004117
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Visual Basic",
+					title = "Visual Basic",
 					ForumId=1646
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Visual Studio",
+					title = "Visual Studio",
 					ForumId=3831
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "WCF and WF",
+					title = "WCF and WF",
 					ForumId=1004114
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = ".NetFramework",
+					title = ".NetFramework",
 					ForumId=1650
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Windows form",
+					title = "Windows form",
 					ForumId=387161
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "ASP.NET",
+					title = "ASP.NET",
 					ForumId=12076
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "JavaScript",
+					title = "JavaScript",
 					ForumId=1580226
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Web Development",
+					title = "Web Development",
 					ForumId=1640
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Android",
+					title = "Android",
 					ForumId=1848626
 				},
                 new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "iOS",
+					title = "iOS",
 					ForumId=1876716
 				},
                  new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Mobile",
+					title = "Mobile",
 					ForumId=13695
 				},
                  new ForumType () {
 					ImageSource = new UriImageSource { Uri = new Uri ("http://bit.ly/1s07h2W") },
-					Name = "Database",
+					title = "Database",
 					ForumId=1725
 				},
             };

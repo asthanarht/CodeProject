@@ -149,15 +149,15 @@ namespace CPMobile
 				}
             };
 
-            var tapGestureTipsMessageRecognizer = new TapGestureRecognizer();
-            tapGestureTipsMessageRecognizer.Tapped +=
+            var tapGestureTipsRecognizer = new TapGestureRecognizer();
+            tapGestureTipsRecognizer.Tapped +=
                 (sender, e) =>
                 {
                     var authorArticles = new AuthorArticlePage("Tips & Tricks",AuthorDataType.Tips);
                     Navigation.PushAsync(authorArticles);
                 };
 
-            stackTip.GestureRecognizers.Add(tapGestureTipsMessageRecognizer);
+            stackTip.GestureRecognizers.Add(tapGestureTipsRecognizer);
             var comments = new Label()
             {
                 Text = "Comment",
@@ -195,7 +195,7 @@ namespace CPMobile
                     Navigation.PushAsync(authorArticles);
                 };
 
-            stackTip.GestureRecognizers.Add(tapGestureCommentsMessageRecognizer);
+            stackComments.GestureRecognizers.Add(tapGestureCommentsMessageRecognizer);
 
             //overall
 

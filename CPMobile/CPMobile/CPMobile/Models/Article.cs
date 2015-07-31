@@ -76,7 +76,10 @@ namespace CPMobile.Models
             }
             set
             {
-                _summary = value.ToString().Truncate(150);
+                if (!string.IsNullOrEmpty(value))
+                    _summary = value.ToString().Truncate(150);
+                else
+                    _summary = value;
             }
         }
         public string contentType { get; set; }

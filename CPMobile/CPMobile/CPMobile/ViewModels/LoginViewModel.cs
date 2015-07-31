@@ -2,6 +2,7 @@
 using CPMobile.Models;
 using CPMobile.Views;
 using Xamarin.Forms;
+using System;
 
 namespace CPMobile.ViewModels
 {
@@ -41,7 +42,7 @@ namespace CPMobile.ViewModels
             {
                 isLoginSuccess = await cpFeeds.GetAccessToken("asthanarht@gmail.com", "#include");
             }
-            catch
+            catch(Exception ex)
             {
                 isLoginSuccess = false;
             }

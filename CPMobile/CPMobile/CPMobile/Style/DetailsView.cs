@@ -28,7 +28,7 @@ namespace CPMobile
 
             var bio = new Label()
             {
-                Text = myProfile.biography.ToString().Truncate(400),
+                Text = myProfile.biography.ToString().TruncateCharAtIndex(".",2),
                 FontSize = 14,
                 FontFamily = Device.OnPlatform("HelveticaNeue", "sans-serif", null),
                 XAlign = TextAlignment.Center,

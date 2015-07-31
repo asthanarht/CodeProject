@@ -1,4 +1,7 @@
-﻿using Xamarin.Forms;
+﻿using CPMobile.Service;
+using System.Diagnostics;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace CPMobile
 {
@@ -59,6 +62,20 @@ namespace CPMobile
                 Children = { titleLabel, statusLayout, ratingStack }
             };
 
+
+            //------ Creating Contact Action 1 Start --------//
+            var moreAction = new MenuItem { Text = "Favorite" };
+            moreAction.SetBinding(MenuItem.CommandParameterProperty, new Binding("."));
+            moreAction.Clicked += async (sender, e) => {
+                await Task.Run(() => {
+                    var mi = ((MenuItem)sender) ;
+
+                    var favListItems = mi.CommandParameter as CPMobile.Models.Item;
+                    FavoriteDataService.SaveListItems(favListItems);
+                    //Debug.WriteLine("More Context Action clicked: " + mi.CommandParameter as CPMobile.Models.Item);
+                });
+            };
+            ContextActions.Add(moreAction);
             //var tapImage = new Image()
             //{
             //    Source = "tap.png",
