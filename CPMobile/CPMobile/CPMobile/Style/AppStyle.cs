@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CPMobile
 {
@@ -123,7 +118,7 @@ namespace CPMobile
                 return new Style(typeof(Frame))
                 {
                     Setters = {
-						new Setter { Property = Frame.OutlineColorProperty, Value = AppStyle.DarkLabelColor },
+						new Setter { Property = Frame.OutlineColorProperty, Value = DarkLabelColor },
 						new Setter { Property = Frame.BackgroundColorProperty, Value = Color.Transparent },
 						new Setter { Property = Frame.HasShadowProperty, Value = false },
 					}

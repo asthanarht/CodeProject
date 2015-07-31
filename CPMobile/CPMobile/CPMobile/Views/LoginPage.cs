@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CPMobile.ViewModels;
 using Xamarin.Forms;
-using CPMobile.Models;
-using CPMobile.ViewModels;
 
 namespace CPMobile.Views
 {
@@ -19,7 +13,7 @@ namespace CPMobile.Views
             {
                 Color = Color.White,
             };
-            activityIndicator.SetBinding(ActivityIndicator.IsVisibleProperty, "IsBusy");
+            activityIndicator.SetBinding(IsVisibleProperty, "IsBusy");
             activityIndicator.SetBinding(ActivityIndicator.IsRunningProperty, "IsBusy");
             //  BackgroundColor = Color.Blue;
             BackgroundImage = "orange.jpg";
@@ -38,7 +32,7 @@ namespace CPMobile.Views
 
             var backgroundImage = new Image()
             {
-                Aspect = Xamarin.Forms.Aspect.Fill,
+                Aspect = Aspect.Fill,
                 Source = FileImageSource.FromFile("orange.jpg")
             };
 

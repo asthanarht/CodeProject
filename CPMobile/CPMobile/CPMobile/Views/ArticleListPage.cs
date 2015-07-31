@@ -1,10 +1,6 @@
 ﻿using CPMobile.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+using CPMobile.Models;
 
 namespace CPMobile.Views
 {
@@ -19,7 +15,7 @@ namespace CPMobile.Views
             {
                 Color = Color.White,
             };
-            activityIndicator.SetBinding(ActivityIndicator.IsVisibleProperty, "IsBusy");
+            activityIndicator.SetBinding(IsVisibleProperty, "IsBusy");
             activityIndicator.SetBinding(ActivityIndicator.IsRunningProperty, "IsBusy");
             var vetlist = new ListView
             {
@@ -41,6 +37,10 @@ namespace CPMobile.Views
 
              vetlist.ItemSelected += (sender, e) =>
              {
+                 var selectedObject = e.SelectedItem as CPMobile.Models.Item;
+
+                 var WebViewPage = new WebViewPage("General Articles",string.Format("http:{0}",selectedObject.websiteLink));
+                 Navigation.PushAsync(WebViewPage);
                 // Navigation.PushAsync( );
              };
            

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+using System.Globalization;
+using CPMobile.ViewModels;
 using CustomLayouts.Controls;
 using CustomLayouts.ViewModels;
-using CustomLayouts;
-using CPMobile.ViewModels;
+using Xamarin.Forms;
+
 namespace CPMobile.Views
 {
     public class MainListPage : ContentPage
@@ -30,7 +28,7 @@ namespace CPMobile.Views
            // BindingContext = viewModel;
             //BackgroundColor = Color.Black;
             Title = "CodeProject";
-
+            NavigationPage.SetHasNavigationBar(this, true);
             relativeLayout = new RelativeLayout
             {
                 HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -118,7 +116,7 @@ namespace CPMobile.Views
 
     public class SpacingConverter : IValueConverter
     {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var items = value as IEnumerable<ICarouselViewModel>;
 
@@ -130,7 +128,7 @@ namespace CPMobile.Views
             return collection;
         }
 
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
             throw new NotImplementedException();
         }

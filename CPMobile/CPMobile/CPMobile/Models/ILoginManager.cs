@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CPMobile.Models
+﻿namespace CPMobile.Models
 {
 	public interface ILoginManager
 	{

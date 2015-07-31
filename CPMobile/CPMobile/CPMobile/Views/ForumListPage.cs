@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
+using CPMobile.Helper;
 
 namespace CPMobile.Views
 {
@@ -12,7 +7,37 @@ namespace CPMobile.Views
     {
         public ForumListPage()
         {
-            Content = new Label { Text = "Hello ContentView", TextColor=Color.Blue };
+            var searchBar = new SearchBar
+            {
+                Placeholder = "Search Forum ",
+                BackgroundColor = Color.White,
+                CancelButtonColor = App.BrandColor,
+            };
+            var vetlist = new ListView
+            {
+                HasUnevenRows = false,
+                ItemTemplate = new DataTemplate(typeof(CustomListStyle)),
+                ItemsSource = ForumListData.GetData(),
+                BackgroundColor = Color.White,
+                RowHeight = 50,
+            };
+
+            //vetlist.SetBinding<ArticlePageViewModel>();
+            Content = new StackLayout
+            {
+                HorizontalOptions = LayoutOptions.FillAndExpand,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                BackgroundColor = Color.White,
+                Children = { searchBar, vetlist }
+            };
+
+              vetlist.ItemSelected += (sender, e) =>
+                {
+                     var selectedObject = e.SelectedItem as CPMobile.Models.ForumType;
+
+                 var forumPage = new ForumDetailListPage(selectedObject.Name,selectedObject.ForumId);
+                 Navigation.PushAsync(forumPage);
+                };
         }
     }
 }

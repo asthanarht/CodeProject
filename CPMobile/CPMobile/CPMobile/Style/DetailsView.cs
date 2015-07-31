@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-
+﻿using CPMobile.Helper;
+using CPMobile.Models;
 using Xamarin.Forms;
 
 namespace CPMobile
 {
     public class DetailsView : ContentView
     {
-        public DetailsView()
+        public DetailsView(MyProfile myProfile = null)
         {
             var name = new Label()
             {
-                Text = "Rohit Asthana",
+                Text = myProfile.displayName,
                 FontSize = 20,
                 FontFamily = Device.OnPlatform("HelveticaNeue-Bold", "sans-serif-black", null),
                 XAlign = TextAlignment.Center,
@@ -23,7 +19,7 @@ namespace CPMobile
 
             var where = new Label()
             {
-                Text = "India, Noida",
+                Text = myProfile.country,
                 FontSize = 12,
                 FontFamily = Device.OnPlatform("HelveticaNeue-Light", "sans-serif-light", null),
                 XAlign = TextAlignment.Center,
@@ -32,7 +28,7 @@ namespace CPMobile
 
             var bio = new Label()
             {
-                Text = "Do you have treats for me? Look at me, I'm an angel, sitting and everything.",
+                Text = myProfile.biography.ToString().Truncate(400),
                 FontSize = 14,
                 FontFamily = Device.OnPlatform("HelveticaNeue", "sans-serif", null),
                 XAlign = TextAlignment.Center,

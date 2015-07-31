@@ -1,7 +1,6 @@
-﻿using CPMobile.ViewModels;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using CPMobile.ViewModels;
 using Xamarin.Forms;
 
 namespace CustomLayouts.ViewModels

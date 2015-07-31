@@ -1,12 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using CPMobile.Helper;
 
 namespace CPMobile.Models
 {
+    public enum AuthorDataType
+    {
+        Article,
+        Message,
+        Tips,
+        TechBlog,
+        Comments
+    }
     public class CPFeed
     {
         public Pagination pagination { get; set; }

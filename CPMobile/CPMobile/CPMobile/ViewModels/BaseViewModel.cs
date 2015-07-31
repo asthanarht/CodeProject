@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
@@ -109,7 +106,7 @@ namespace CPMobile.ViewModels
             OnPropertyChanged(propertyName);
         }
         #region INotifyPropertyChanging implementation
-        public event Xamarin.Forms.PropertyChangingEventHandler PropertyChanging;
+        public event PropertyChangingEventHandler PropertyChanging;
         #endregion
 
         public void OnPropertyChanging(string propertyName)
@@ -117,7 +114,7 @@ namespace CPMobile.ViewModels
             if (PropertyChanging == null)
                 return;
 
-            PropertyChanging(this, new Xamarin.Forms.PropertyChangingEventArgs(propertyName));
+            PropertyChanging(this, new PropertyChangingEventArgs(propertyName));
         }
 
         #region INotifyPropertyChanged implementation

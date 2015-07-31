@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
-using System.Reactive.Linq;
 using CPMobile.Models;
 using Xamarin.Forms;
-using Akavache;
 
 namespace CPMobile.ViewModels
 {
-    public class ArticleViewModel:BaseViewModel
+    public class AuthorArticleViewModel: BaseViewModel
     {
         readonly ICPFeeds cpFeed;
 
         public ObservableCollection<Item> Articles { get; set; }
-        public ArticleViewModel()
+        public AuthorArticleViewModel ()
         {
             cpFeed = DependencyService.Get<ICPFeeds>();
             Title = "CodeProject";
@@ -31,13 +29,13 @@ namespace CPMobile.ViewModels
             await cpFeed.Init();
         }
 
-        private Command getCPFeedCommand;
-        public Command GetCPFeedCommand
+        private Command getAuthorArticleCommand;
+        public Command GetAuthorArticleCommand
         {
             get
             {
-                return getCPFeedCommand ??
-                    (getCPFeedCommand = new Command(async () => await ExecuteGetCPFeedCommand(), () => { return !IsBusy; }));
+                return getAuthorArticleCommand ??
+                    (getAuthorArticleCommand = new Command(async () => await ExecuteGetCPFeedCommand(), () => { return !IsBusy; }));
             }
         }
 
@@ -50,16 +48,12 @@ namespace CPMobile.ViewModels
 
             IsBusy = true;
 
-            GetCPFeedCommand.ChangeCanExecute();
+            GetAuthorArticleCommand.ChangeCanExecute();
 
             try
             {
-
-                var articles = await BlobCache.LocalMachine.GetOrFetchObject<CPFeed>("DefaultArticle",
-                                                                                            async () => await cpFeed.GetArticleAsync(1),
-                                                                                            DateTimeOffset.Now.AddDays(1)
-                                                                                        );
-                foreach (var article in articles.items)
+                var articles = await cpFeed.MyArticles(1);
+                foreach(var article in articles.items)
                 {
                     Articles.Add(article);
                 }

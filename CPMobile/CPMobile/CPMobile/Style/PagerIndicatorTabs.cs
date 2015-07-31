@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
 using System.Reflection;
-using System.Threading.Tasks;
 using Xamarin.Forms;
-using CustomLayouts.ViewModels;
-using CPMobile.ViewModels;
 
 namespace CPMobile
 {
@@ -27,7 +22,7 @@ namespace CPMobile
             Device.OnPlatform(iOS: () => BackgroundColor = Color.FromHex("#9B2202"), Android: () => BackgroundColor = Color.FromHex("#9B2202"));
             var assembly = typeof(PagerIndicatorTabs).GetTypeInfo().Assembly;
             foreach (var res in assembly.GetManifestResourceNames())
-                System.Diagnostics.Debug.WriteLine("found resource: " + res);
+                Debug.WriteLine("found resource: " + res);
         }
 
         void CreateTabs()

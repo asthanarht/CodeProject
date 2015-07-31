@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
+using CPMobile.Models;
 using ImageCircle.Forms.Plugin.Abstractions;
 using Xamarin.Forms;
 
@@ -11,11 +8,11 @@ namespace CPMobile.Views
 
     public class Profile : ContentPage
     {
-        
-        public Profile()
+
+        public Profile(MyProfile myProfile = null)
         {
-            NavigationPage.SetHasNavigationBar(this, true);
             Title = "Profile";
+            NavigationPage.SetHasNavigationBar(this, true);
             BackgroundColor = Color.White;
 
             var backgroundImage = new Image()
@@ -28,12 +25,12 @@ namespace CPMobile.Views
 
             var shader = new BoxView()
             {
-                Color = Color.Black.MultiplyAlpha(.5),
+                Color = Color.Black.MultiplyAlpha(.5)
             };
 
             var face = new CircleImage
             {
-                BorderColor = AppStyle.BrandColor,
+                BorderColor = Color.White,
                 BorderThickness = 2,
                 HeightRequest = 100,
                 WidthRequest = 100,
@@ -41,7 +38,7 @@ namespace CPMobile.Views
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
                 Source =
-                    new UriImageSource {Uri = new Uri("http://bit.ly/1s07h2W"), CacheValidity = TimeSpan.FromDays(30)},
+                    new UriImageSource { Uri = new Uri(myProfile.avatar), CacheValidity = TimeSpan.FromDays(30) },
             };
 
             var dome = new Image()
@@ -60,8 +57,8 @@ namespace CPMobile.Views
                 Source = new FileImageSource() { File = "pindrop.png" }
             };
 
-            var details = new DetailsView();
-            var slideshow = new ShowProfileDetailsView();
+            var details = new DetailsView(myProfile);
+            var slideshow = new ShowProfileDetailsView(myProfile);
 
             RelativeLayout relativeLayout = new RelativeLayout()
             {
@@ -181,7 +178,7 @@ namespace CPMobile.Views
                 {
                     return parent.Width;
                 }),
-                Constraint.Constant(120)
+                Constraint.Constant(200)
             );
 
             relativeLayout.Children.Add(
@@ -208,7 +205,7 @@ namespace CPMobile.Views
             };
 
             this.Content = relativeLayout;
-          
+
         }
     }
 }

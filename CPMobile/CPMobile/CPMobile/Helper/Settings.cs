@@ -1,6 +1,6 @@
-﻿using System;
-using Refractored.Xam.Settings;
+﻿using Refractored.Xam.Settings;
 using Refractored.Xam.Settings.Abstractions;
+
 namespace CPMobile.Helper
 {
     public static class Settings

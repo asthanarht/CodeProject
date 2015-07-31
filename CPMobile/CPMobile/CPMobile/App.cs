@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Xamarin.Forms;
-using CPMobile.Views;
+﻿using Akavache;
 using CPMobile.Models;
+using CPMobile.Views;
+using Xamarin.Forms;
 
 namespace CPMobile
 {
@@ -20,7 +16,7 @@ namespace CPMobile
             // The root page of your application
             //Current = this;
            // MainPage = new Profile();
-
+            BlobCache.ApplicationName = "CPMobile";
             MainPage = new LoginPage();
             //var isLoggedIn = Properties.ContainsKey("IsLoggedIn")?(bool)Properties ["IsLoggedIn"]:false;
 

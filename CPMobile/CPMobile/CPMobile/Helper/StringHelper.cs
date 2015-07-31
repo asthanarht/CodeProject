@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CPMobile.Helper
+﻿namespace CPMobile.Helper
 {
     public static class StringHelper
     {
@@ -12,6 +6,19 @@ namespace CPMobile.Helper
         {
             if (string.IsNullOrEmpty(value)) return value;
             return value.Length <= maxLength ? value : value.Substring(0, maxLength);
+        }
+
+        public static string HttpUrlFix(this string value)
+        {
+            if (string.IsNullOrEmpty(value)) return value;
+            if(value.Contains("http"))
+            {
+                return value;
+            }
+            else
+            {
+                return string.Format("http:{0}", value);
+            }
         }
     }
 }

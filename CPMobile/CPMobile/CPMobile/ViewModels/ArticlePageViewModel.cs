@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CPMobile.Views;
+﻿using CPMobile.Views;
+using Xamarin.Forms;
 
 namespace CPMobile.ViewModels
 {
     public class ArticlePageViewModel :ICarouselViewModel
     {
-        public Xamarin.Forms.ContentView View
+        public ContentView View
         {
             get { return new ArticleListPage(); }
         }

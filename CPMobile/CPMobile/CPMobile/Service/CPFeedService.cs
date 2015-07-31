@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CPMobile.Models;
-using Newtonsoft.Json;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using Xamarin.Forms;
-using CPMobile.Service;
+using System.Threading.Tasks;
 using CPMobile.Helper;
-
+using CPMobile.Models;
+using System.Reactive;
+using System.Reactive.Linq;
+using System.Reactive.Threading;
+using CPMobile.Service;
+using Xamarin.Forms;
+using Akavache;
 
 [assembly: Dependency(typeof(CPFeedService))]
 namespace CPMobile.Service
@@ -73,7 +73,7 @@ namespace CPMobile.Service
             }
         }
 
-        public async Task<IEnumerable<Item>> GetArticleAsync(int page)
+        public async Task<CPFeed> GetArticleAsync(int page)
         {
             if (!initialized)
                 await Init();
@@ -100,12 +100,50 @@ namespace CPMobile.Service
                     // parse the response and return the data.
                     string jsonString = await response.Content.ReadAsStringAsync();
                     CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
-                    return responseData.items;
+                    await BlobCache.LocalMachine.InsertObject<CPFeed>("DefaultArticle", responseData, DateTimeOffset.Now.AddDays(1));
+                    return responseData;
                 }
             }
             else
             {
                 Init();
+                return null;
+            }
+        }
+
+        public async Task<CPFeed> GetForumAsync(int tag)
+        {
+            
+            var accessToken = Settings.AuthToken;
+
+            if (!string.IsNullOrEmpty(accessToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/Forum/{0}/Messages?page=1", tag);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    //await BlobCache.LocalMachine.InsertObject<CPFeed>("DefaultArticle", responseData, DateTimeOffset.Now.AddDays(1));
+                    return responseData;
+                }
+            }
+            else
+            {
+                
                 return null;
             }
         }
@@ -161,6 +199,221 @@ namespace CPMobile.Service
             }
         }
 
+        public async Task<MyProfile> GetMyProfile()
+        {
+            var loginToken = Settings.AuthLoginToken;
+
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/Profile");
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+                    // make the request
+
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    MyProfile responseData = JsonHelper.Deserialize<MyProfile>(jsonString);
+
+
+
+                    // await dataStorageService.Save_Value("MyProfile", responseData);
+
+                    return responseData;
+                }
+            }
+            else
+            {
+                return null;
+            }
+            //throw new NotImplementedException();
+        }
+
+        /// <summary>
+        /// Gets the page of Articles.
+        /// </summary>
+        /// <param name="page">The page to get.</param>
+        /// <returns>The page of articles.</returns>
+        public async Task<CPFeed> MyArticles(int page)
+        {
+            var loginToken = Settings.AuthLoginToken;
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/Articles?page={0}", page);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    return responseData;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+        }
+
+        public async Task<CPFeed> MyMessage(int page)
+        {
+            var loginToken = Settings.AuthLoginToken;
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/Messages?page={0}", page);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    return responseData;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+        }
+
+        public async Task<CPFeed> MyTips(int page)
+        {
+            var loginToken = Settings.AuthLoginToken;
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/tips?page={0}", page);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    return responseData;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+        }
+
+        public async Task<CPFeed> MyBlogs(int page)
+        {
+            var loginToken = Settings.AuthLoginToken;
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/blogposts?page={0}", page);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    return responseData;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+        }
+
+        public async Task<CPFeed> MyComments(int page)
+        {
+            var loginToken = Settings.AuthLoginToken;
+            if (!string.IsNullOrEmpty(loginToken))
+            {
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(baseUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    // Add the Authorization header with the AccessToken.
+                    client.DefaultRequestHeaders.Add("Authorization", "Bearer " + loginToken);
+
+                    // create the URL string.
+                    string url = string.Format("v1/My/questions?page={0}", page);
+
+                    // make the request
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    // parse the response and return the data.
+                    string jsonString = await response.Content.ReadAsStringAsync();
+                    CPFeed responseData = JsonHelper.Deserialize<CPFeed>(jsonString);
+                    return responseData;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+        }
 
     }
 }

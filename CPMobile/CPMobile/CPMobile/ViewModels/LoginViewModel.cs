@@ -1,10 +1,6 @@
-﻿using CPMobile.Models;
+﻿using System.Threading.Tasks;
+using CPMobile.Models;
 using CPMobile.Views;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace CPMobile.ViewModels
@@ -43,7 +39,7 @@ namespace CPMobile.ViewModels
 
             try
             {
-                isLoginSuccess = true;//await cpFeeds.GetAccessToken(UserName, Password);
+                isLoginSuccess = await cpFeeds.GetAccessToken("asthanarht@gmail.com", "#include");
             }
             catch
             {
