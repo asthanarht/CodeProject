@@ -47,12 +47,12 @@ namespace CPMobile
                     iOS: () =>
                     {
                         
-                        tab.Children.Add(new Image { Source = "pin.png", HeightRequest = 20 });
+                        tab.Children.Add(new Image { Source = dyntab.TabIcon, HeightRequest = 20 });
                         tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11, TextColor = Color.White });
                     },
                     Android: () =>
                     {
-                        tab.Children.Add(new Image { Source = "pin.png", HeightRequest = 25 });
+                        tab.Children.Add(new Image { Source = dyntab.TabIcon, HeightRequest = 25 });
                         tab.Children.Add(new Label { Text = dyntab.TabText, FontSize = 11, TextColor=Color.White });
                     }
                 );

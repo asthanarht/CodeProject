@@ -26,6 +26,7 @@ namespace CPMobile.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Splat.Resource.String.library_name = global::CPMobile.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Attribute
@@ -44,14 +45,14 @@ namespace CPMobile.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f030002
-			public const int accent = 2130903042;
+			// aapt resource value: 0x7f040002
+			public const int accent = 2130968578;
 			
-			// aapt resource value: 0x7f030000
-			public const int material_blue_500 = 2130903040;
+			// aapt resource value: 0x7f040000
+			public const int material_blue_500 = 2130968576;
 			
-			// aapt resource value: 0x7f030001
-			public const int material_orange = 2130903041;
+			// aapt resource value: 0x7f040001
+			public const int material_orange = 2130968577;
 			
 			static Color()
 			{
@@ -67,37 +68,55 @@ namespace CPMobile.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int chat = 2130837504;
+			public const int about = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int dome = 2130837505;
+			public const int article = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int icon = 2130837506;
+			public const int chat = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int offline = 2130837507;
+			public const int dome = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int online = 2130837508;
+			public const int favorite = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int orange = 2130837509;
+			public const int forum = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int pin = 2130837510;
+			public const int home = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int pindrop = 2130837511;
+			public const int icon = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int settings = 2130837512;
+			public const int menu = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int star = 2130837513;
+			public const int offline = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int tap = 2130837514;
+			public const int online = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int orange = 2130837515;
+			
+			// aapt resource value: 0x7f02000c
+			public const int pin = 2130837516;
+			
+			// aapt resource value: 0x7f02000d
+			public const int pindrop = 2130837517;
+			
+			// aapt resource value: 0x7f02000e
+			public const int settings = 2130837518;
+			
+			// aapt resource value: 0x7f02000f
+			public const int star = 2130837519;
+			
+			// aapt resource value: 0x7f020010
+			public const int tap = 2130837520;
 			
 			static Drawable()
 			{
@@ -109,20 +128,36 @@ namespace CPMobile.Droid
 			}
 		}
 		
+		public partial class String
+		{
+			
+			// aapt resource value: 0x7f030000
+			public const int library_name = 2130903040;
+			
+			static String()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private String()
+			{
+			}
+		}
+		
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int MyTheme = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int MyTheme = 2131034113;
 			
-			// aapt resource value: 0x7f040003
-			public const int MyTheme_ActionBar_TitleTextStyle = 2130968579;
+			// aapt resource value: 0x7f050003
+			public const int MyTheme_ActionBar_TitleTextStyle = 2131034115;
 			
-			// aapt resource value: 0x7f040002
-			public const int MyTheme_ActionBarStyle = 2130968578;
+			// aapt resource value: 0x7f050002
+			public const int MyTheme_ActionBarStyle = 2131034114;
 			
-			// aapt resource value: 0x7f040000
-			public const int MyTheme_Base = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int MyTheme_Base = 2131034112;
 			
 			static Style()
 			{

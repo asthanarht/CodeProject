@@ -14,7 +14,7 @@ namespace CPMobile.Views
 
         public MenuPage(RootPage rootPage)
         {
-            Icon = "settings.png";
+            Icon = "menu.png";
             Title = "menu"; // The Title property must be set.
 
             this.rootPage = rootPage;
@@ -32,10 +32,9 @@ namespace CPMobile.Views
             };
             var section = new TableSection()
             {
-                new MenuCell {Text = "Home",Host= this},
-                new MenuCell {Text = "Favorites",Host= this},
-                new MenuCell {Text = "About",Host= this},
-                new MenuCell {Text = "Contact",Host= this},
+                new MenuCell {Text = "Home",Host= this,ImageSrc="home.png"},
+                new MenuCell {Text = "Favorites",Host= this,ImageSrc="favorite.png"},
+                new MenuCell {Text = "About",Host= this,ImageSrc="about.png"},
             };
             var root = new TableRoot() { section };
 

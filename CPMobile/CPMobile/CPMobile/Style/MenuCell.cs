@@ -12,10 +12,23 @@ namespace CPMobile
         }
         Label label;
 
+        public ImageSource ImageSrc
+        {
+            get { return image.Source; }
+            set { image.Source = value; }
+        }
+        Image image;
+
         public MenuPage Host { get; set; }
 
         public MenuCell()
         {
+            image = new Image {
+                HeightRequest = 15,
+                WidthRequest = 15,
+            };
+           // image.SetBinding(Image.SourceProperty, ImageSrc);
+
             label = new Label
             {
                 YAlign = TextAlignment.Center,
@@ -28,7 +41,7 @@ namespace CPMobile
                 Padding = new Thickness(20, 0, 0, 0),
                 Orientation = StackOrientation.Horizontal,
                 HorizontalOptions = LayoutOptions.StartAndExpand,
-                Children = { label }
+                Children = { image,label }
             };
             View = layout;
         }

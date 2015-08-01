@@ -1,4 +1,5 @@
-﻿using CPMobile.Views;
+﻿using System;
+using CPMobile.Views;
 using Xamarin.Forms;
 
 namespace CPMobile.ViewModels
@@ -14,6 +15,14 @@ namespace CPMobile.ViewModels
         public string TabText
         {
             get { return "Article"; }
+        }
+
+        public string TabIcon
+        {
+            get
+            {
+                return "article.png";
+            }
         }
     }
 }

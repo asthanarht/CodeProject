@@ -20,5 +20,7 @@ namespace CPMobile
     {
         ContentView View { get; }
         string TabText { get;  }
+
+        string TabIcon { get; }
     }
 }
